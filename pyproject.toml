@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "chapter_three"
+version = "0.1"
+dependencies = ["numpy","pytest"]
+
+packages = [
+    { include = "polynomials" },
+    { include = "shape_ex/shape" },
+    { include = "shape_ex/tests" }
+]
